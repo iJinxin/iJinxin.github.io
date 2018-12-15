@@ -100,23 +100,23 @@
     </div>
 </div>
         <div class="post-content">
-            <p>从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？“从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？‘从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？……’” <a id="more"></a><br>– by 维基百科-递归语言例子</p>
+            <p>从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？“从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？‘从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？……’” <a id="more"></a><br>———— by 维基百科-递归语言例子</p>
 <p>几个经典的递归问题</p>
 <h2 id="走楼梯"><a href="#走楼梯" class="headerlink" title="走楼梯"></a>走楼梯</h2><blockquote>
 <p>一共10级楼梯，每次可以走一步或者两步，求一共多少种走法</p>
 </blockquote>
-<p><strong><br>Thinking:<br></strong><br>要想走到第n级台阶，一共有两种走法：</p>
+<p><strong>Thinking:</strong>要想走到第n级台阶，一共有两种走法：</p>
 <ul>
 <li>从n-2级台阶迈两步</li>
 <li>从n-1级台阶迈一步</li>
 </ul>
 <p>对于如何走到 <code>n-2</code> 和 <code>n-1</code> 级台阶，也是分了以上两种情况，以此类推。<br>那么，这个问题可以简化为 <code>step(n) = step(n-2) + step(n-1)</code> 。</p>
 <p>不难发现 <code>step(0) = 0</code>，<code>step(1) = 1</code>, <code>step(2) = 2</code>。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fib</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n === <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (n === <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> fib(n<span class="number">-2</span>) + fib(n<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(fib(<span class="number">10</span>));</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">step</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n === <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (n === <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> step(n<span class="number">-2</span>) + step(n<span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(step(<span class="number">10</span>));</span><br></pre></td></tr></table></figure>
 <h2 id="细胞分裂"><a href="#细胞分裂" class="headerlink" title="细胞分裂"></a>细胞分裂</h2><blockquote>
 <p>一个细胞，一个小时分裂一次，生命周期是三个小时，求n个小时后，有多少细胞</p>
 </blockquote>
-<p><strong><br>Thinking:<br></strong><br>细胞在其生命周期分为三种状态：</p>
+<p><strong>Thinking:</strong>细胞在其生命周期分为三种状态：</p>
 <ul>
 <li>stateA: 刚分裂 –&gt; 由前一个小时的stateA, stateB, stateC 分裂组成</li>
 <li>stateB: 分裂一小时 –&gt; 由前一小时stateA细胞生长组成</li>
