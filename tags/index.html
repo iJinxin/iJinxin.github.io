@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="/css/gitment.css">
     <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
 </head>
-
 <body>
-    <header class="header">
+<header class="header">
     <div class="header-inner">
         <div class="header-title">
 
@@ -42,7 +41,7 @@
         </nav>
     </div>
 </header>
-    <header class="mobile-header">
+<header class="mobile-header">
     <div class="mobile-nav">
         <div class="mobile-nav-icon">
             <span></span>
@@ -75,27 +74,17 @@
         </ul>
     </nav>
 </header>
-    <div class="main">
-        <div class="content-inner">
-            <div class="tags">
+<div class="main">
+    <div class="content-inner">
+        <div class="tags">
     <div class="tags-list">
-        
-            <a class="tags-list-item" href="#summary" title="summary">summary</a>
         
             <a class="tags-list-item" href="#hexo" title="hexo">hexo</a>
         
+            <a class="tags-list-item" href="#summary" title="summary">summary</a>
+        
     </div>
     <div class="tags-archives">
-        
-            <span class="tag-text">summary</span>
-            
-                <div class="tags-post">
-                    <span class="tags-post-time">2019-01-25</span>
-                    <span class="tags-post-title">
-                        <a class="tags-post-link" href="/2019/01/25/2018-summary/">2018总结</a>
-                    </span>
-                </div>
-            
         
             <span class="tag-text">hexo</span>
             
@@ -107,12 +96,22 @@
                 </div>
             
         
+            <span class="tag-text">summary</span>
+            
+                <div class="tags-post">
+                    <span class="tags-post-time">2019-01-25</span>
+                    <span class="tags-post-title">
+                        <a class="tags-post-link" href="/2019/01/25/2018-summary/">2018总结</a>
+                    </span>
+                </div>
+            
+        
     </div>
 </div>
 
-        </div>
     </div>
-    <footer class="footer-social">
+</div>
+<footer class="footer-social">
     
     <a class="social-link" target="_blank" href="https://github.com/iJinxin">
         <i class="iconfont icon-github"></i>
@@ -154,19 +153,18 @@
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-    if (config.comment) {
-        var gitment = new Gitment({
-            id: 'tags',
-            owner: 'iJinxin',
-            repo: 'iJinxin.github.io',
-            oauth: {
-                client_id: '9d07438755bc000ce515',
-                client_secret: 'eb8aebc798559d4f690f1e950c308d1b16b61262'
-            }
-        });
-        gitment.render('comment-container');
-    }
+    
+    var gitment = new Gitment({
+        id: 'tags',
+        owner: 'iJinxin',
+        repo: 'iJinxin.github.io',
+        oauth: {
+            client_id: '9d07438755bc000ce515',
+            client_secret: 'eb8aebc798559d4f690f1e950c308d1b16b61262'
+        }
+    });
+    gitment.render('comment-container');
+    
 
 </script>
-
 </html>
