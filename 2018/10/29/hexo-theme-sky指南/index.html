@@ -34,10 +34,6 @@
             
 
             
-            <a href="/about/" class="header-nav-link">
-                关于
-            </a>
-            
         </nav>
     </div>
 </header>
@@ -102,15 +98,11 @@
         <div class="post-content">
             <p>本文档是对hexo-theme-sky主题的详细配置说名，只需要懂得基本git操作以及hexo命令即可轻松搭建属于自己的博客系统。<br><a id="more"></a></p>
 <h2 id="设置站点使用语言"><a href="#设置站点使用语言" class="headerlink" title="设置站点使用语言"></a>设置站点使用语言</h2><p>主题默认使用中文，可以在 <code>_config_yml</code> 中修改 <code>languages</code> 字段进行修改<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">languages:</span> <span class="string">en</span></span><br></pre></td></tr></table></figure></p>
-<p>目前支持的语言：</p>
-<ul>
-<li>简体中文：zh-cn</li>
-<li>英文：en</li>
-</ul>
+<p>目前支持的语言：<code>简体中文：zh-cn</code>, <code>英文：en</code></p>
 <p>如果你有兴趣添加其他语言在主题中可以给我发PR。</p>
-<h2 id="设置建站时间-作者"><a href="#设置建站时间-作者" class="headerlink" title="设置建站时间, 作者"></a>设置建站时间, 作者</h2><p>底部默认的建站时间为今年<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">©</span> <span class="number">2018</span> <span class="string">by</span> <span class="string">John</span> <span class="string">Doe</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="设置建站时间-作者"><a href="#设置建站时间-作者" class="headerlink" title="设置建站时间, 作者"></a>设置建站时间, 作者</h2><p>底部默认的建站时间为今年<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">©</span> <span class="number">2019</span> <span class="string">by</span> <span class="string">John</span> <span class="string">Doe</span></span><br></pre></td></tr></table></figure></p>
 <p>修改 <code>_config</code> 中 <code>author</code> 字段，然后添加 <code>since</code> 字段<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author:</span> <span class="string">iJinxin</span></span><br><span class="line"><span class="attr">since:</span> <span class="number">2017</span></span><br></pre></td></tr></table></figure></p>
-<p>修改后的效果为<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">©</span> <span class="number">2017</span> <span class="bullet">-</span> <span class="number">2018</span> <span class="string">by</span> <span class="string">iJinxin</span></span><br></pre></td></tr></table></figure></p>
+<p>修改后的效果为<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">©</span> <span class="number">2017</span> <span class="bullet">-</span> <span class="number">2019</span> <span class="string">by</span> <span class="string">iJinxin</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="添加标签页"><a href="#添加标签页" class="headerlink" title="添加标签页"></a>添加标签页</h2><p>新建标签页<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">tags</span></span><br></pre></td></tr></table></figure></p>
 <p>编辑生成的 <code>tags/index.md</code> 文件，设置 <code>tags</code> 布局<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span> <span class="string">tags</span></span><br></pre></td></tr></table></figure></p>
 <p>在主题配置文件 <code>themes/_config.yml</code> 文件中<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># menu</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">  Home:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">  Archives:</span> <span class="string">/archives</span></span><br><span class="line"><span class="attr">  Tags:</span> <span class="string">/tags</span></span><br></pre></td></tr></table></figure></p>
