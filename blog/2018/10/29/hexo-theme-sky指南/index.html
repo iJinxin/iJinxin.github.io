@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>Hexo</title>
+    <link rel="stylesheet" href="/blog/css/style.css">
+    <link rel="stylesheet" href="/blog/css/gitment.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="header-title">
+
+        </div>
+        <nav class="header-nav">
+            
+            <a href="/blog/" class="header-nav-link">
+                首页
+            </a>
+            
+
+            
+            <a href="/blog/archives" class="header-nav-link">
+                归档
+            </a>
+            
+
+            
+            <a href="/blog/tags" class="header-nav-link">
+                标签
+            </a>
+            
+
+            
+        </nav>
+    </div>
+</header>
+<header class="mobile-header">
+    <div class="mobile-nav">
+        <div class="mobile-nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav-title">
+            <a href="/blog/" class="mobile-nav-title-link">iJinxin's Blog</a>
+        </div>
+
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-home"></i>
+                <a href="/blog/" class="mobile-nav-link">首页</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-archive"></i>
+                <a href="/blog/archives" class="mobile-nav-link">归档</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-tag"></i>
+                <a href="/blog/tags" class="mobile-nav-link">标签</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-about"></i>
+                <a href="/blog/about/" class="mobile-nav-link">关于</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <div class="content-inner">
+        <div class="posts">
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">hexo-theme-sky使用指南</h2>
+            <div class="post-meta">
+                <span class="post-time">2018-10-29</span>
+                
+                <span class="post-category">
+                    
+                    <a class="category" href="/blog/categories/wiki/">wiki</a>
+                    
+                </span>
+                
+                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
+            </div>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#设置站点使用语言"><span class="toc-text">设置站点使用语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置建站时间-作者"><span class="toc-text">设置建站时间, 作者</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加标签页"><span class="toc-text">添加标签页</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加分类页"><span class="toc-text">添加分类页</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加About页面"><span class="toc-text">添加About页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置底部社交信息"><span class="toc-text">设置底部社交信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加评论服务"><span class="toc-text">添加评论服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布"><span class="toc-text">发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#示例"><span class="toc-text">示例</span></a></li></ol>
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <p>本文档是对hexo-theme-sky主题的详细配置说名，只需要懂得基本git操作以及hexo命令即可轻松搭建属于自己的博客系统。<br><a id="more"></a></p>
+<h2 id="设置站点使用语言"><a href="#设置站点使用语言" class="headerlink" title="设置站点使用语言"></a>设置站点使用语言</h2><p>主题默认使用中文，可以在 <code>_config_yml</code> 中修改 <code>languages</code> 字段进行修改<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">languages:</span> <span class="string">en</span></span><br></pre></td></tr></table></figure></p>
+<p>目前支持的语言：<code>简体中文：zh-cn</code>, <code>英文：en</code></p>
+<p>如果你有兴趣添加其他语言在主题中可以给我发PR。</p>
+<h2 id="设置建站时间-作者"><a href="#设置建站时间-作者" class="headerlink" title="设置建站时间, 作者"></a>设置建站时间, 作者</h2><p>底部默认的建站时间为今年<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">©</span> <span class="number">2019</span> <span class="string">by</span> <span class="string">John</span> <span class="string">Doe</span></span><br></pre></td></tr></table></figure></p>
+<p>修改 <code>_config</code> 中 <code>author</code> 字段，然后添加 <code>since</code> 字段<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author:</span> <span class="string">iJinxin</span></span><br><span class="line"><span class="attr">since:</span> <span class="number">2017</span></span><br></pre></td></tr></table></figure></p>
+<p>修改后的效果为<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">©</span> <span class="number">2017</span> <span class="bullet">-</span> <span class="number">2019</span> <span class="string">by</span> <span class="string">iJinxin</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="添加标签页"><a href="#添加标签页" class="headerlink" title="添加标签页"></a>添加标签页</h2><p>新建标签页<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">tags</span></span><br></pre></td></tr></table></figure></p>
+<p>编辑生成的 <code>tags/index.md</code> 文件，设置 <code>tags</code> 布局<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span> <span class="string">tags</span></span><br></pre></td></tr></table></figure></p>
+<p>在主题配置文件 <code>themes/_config.yml</code> 文件中<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># menu</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">  Home:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">  Archives:</span> <span class="string">/archives</span></span><br><span class="line"><span class="attr">  Tags:</span> <span class="string">/tags</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="添加分类页"><a href="#添加分类页" class="headerlink" title="添加分类页"></a>添加分类页</h2><p>新建分类页<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">categories</span></span><br></pre></td></tr></table></figure></p>
+<p>编辑生成的 <code>categories/index.md</code> 文件，设置 <code>categories</code> 布局<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span> <span class="string">categories</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="添加About页面"><a href="#添加About页面" class="headerlink" title="添加About页面"></a>添加About页面</h2><p>新建about页<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">about</span></span><br></pre></td></tr></table></figure></p>
+<p>编辑生成的 <code>about/index.md</code> 文件，设置 <code>about</code> 布局<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span> <span class="string">about</span></span><br></pre></td></tr></table></figure></p>
+<p>在主题配置文件 <code>themes/_config.yml</code> 文件中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># menu</span><br><span class="line">menu:</span><br><span class="line">  Home: /</span><br><span class="line">  Archives: /archives</span><br><span class="line">  Tags: /tags</span><br><span class="line">  About: /about</span><br></pre></td></tr></table></figure></p>
+<h2 id="设置底部社交信息"><a href="#设置底部社交信息" class="headerlink" title="设置底部社交信息"></a>设置底部社交信息</h2><p>目前仅引入了github, 微博，知乎</p>
+<p>在配置文件 <code>_config.yml</code> 添加社交账号名<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">github_username:</span> <span class="string">your</span> <span class="string">github</span> <span class="string">username</span></span><br><span class="line"><span class="attr">weibo_username:</span></span><br><span class="line"><span class="attr">zhihu_username:</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="添加评论服务"><a href="#添加评论服务" class="headerlink" title="添加评论服务"></a>添加评论服务</h2><p>主题使用了 <a href="https://github.com/imsun/gitment">gitment</a>，在使用之前，需要获取client ID，和client seret。</p>
+<p><a href="https://github.com/settings/applications/new">点击这里</a> 注册一个新的 OAuth Application。其他内容可以随意填写，但需要保证填入正确的callback URL （一般是评论页面对应的域名，如 <a href="https://imsun.net，https://iJinxin.github.io/" target="_blank" rel="noopener">https://imsun.net，https://iJinxin.github.io/</a> 等）</p>
+<p>然后在配置文件 <code>_config.yml</code> 中添加评论<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line"><span class="attr">  owner:</span> <span class="string">your</span> <span class="string">github</span> <span class="string">ID</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">存储评论的repo</span></span><br><span class="line"><span class="attr">  id:</span> <span class="string">your</span> <span class="string">client</span> <span class="string">ID</span></span><br><span class="line"><span class="attr">  secret:</span> <span class="string">your</span> <span class="string">client</span> <span class="string">seret</span></span><br></pre></td></tr></table></figure></p>
+<p>更多关于 <code>gitment</code> 的介绍，可以查看 <a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="noopener">作者博客</a></p>
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p>新完成的文章放在 <code>source/_posts</code> 目录下，在文章发布到 <code>github page</code> 前需要先安装依赖<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>然后执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p>在 <code>source/_post</code> 目录下新建 <code>hello.md</code> 文件, 内容如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hello,</span><br><span class="line">date: 2018-10-29 10:10:10</span><br><span class="line">tags: thinking</span><br><span class="line">categories: 随笔</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">这里是文章的开头部分，在设置了“阅读全文”功能后，首页只显示该部分的文字</span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">这里是文章的剩下部分，点击“文章标题”或者“阅读全文”后才能看见。</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+        
+        <div class="post-tag">
+            
+            <a class="tag" href="/blog/tags/hexo/" title="hexo">hexo</a>
+            
+        </div>
+        
+    </article>
+</div>
+<div class="paginator">
+    
+        
+            <a class="prev" href="/blog/2018/12/30/2018-summary/">
+                <i class="iconfont icon-prev"></i>
+                <span class="nav-default">2018总结</span>
+                <span class="nav-mobile">上一篇</span>
+            </a>
+        
+        
+    
+</div>
+<div id="comment-container"></div>
+    </div>
+</div>
+<footer class="footer-social">
+    
+    <a class="social-link" target="_blank" href="https://github.com/iJinxin">
+        <i class="iconfont icon-github"></i>
+    </a>
+    
+
+    
+    <a class="social-link" target="_blank" href="https://www.zhihu.com/people/iJinxin">
+        <i class="iconfont icon-zhihu"></i>
+    </a>
+    
+
+    
+    <a class="social-link" target="_blank" href="http://weibo.com/iJinxin">
+        <i class="iconfont icon-weibo"></i>
+    </a>
+    
+
+    <div class="footer-copyright">
+        <p class="time-line">
+            &copy;
+            
+            
+                2017 -
+            
+            2019
+            &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
+            <a target="_blank" href="https://github.com/iJinxin">iJinxin</a>
+        </p>
+        <p class="theme-info">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
+            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
+        </p>
+    </div>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/blog/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    
+    var gitment = new Gitment({
+        id: 'hexo-theme-sky使用指南',
+        owner: 'iJinxin',
+        repo: 'iJinxin.github.io',
+        oauth: {
+            client_id: '9d07438755bc000ce515',
+            client_secret: 'eb8aebc798559d4f690f1e950c308d1b16b61262'
+        }
+    });
+    gitment.render('comment-container');
+    
+
+</script>
+</html>
